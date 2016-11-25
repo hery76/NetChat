@@ -1,0 +1,363 @@
+body{
+	font:16px/32px "Microsoft YaHei";
+	color:#104E8B;
+}
+
+.header {
+	margin:0 auto;
+	top:0;
+	width:96%;
+	height:30px;
+	border-radius: 5px;
+	border:1px solid #8DB6CD;
+	padding:4px 1% 4px 1%;
+	color: #104E8B;
+}
+.header .exit{
+	cursor:pointer;
+	float: right;
+}
+
+.header .exit:hover{
+	color:#CD0000;
+}
+
+.header a{
+	text-decoration: none;
+	color: #104E8B;
+}
+.header a:hover{
+	color: #CD0000;
+}
+
+.log_reg {
+	float: right;
+}
+.log_reg a{
+	text-decoration: none;
+	color: #104E8B;
+}
+.log_reg a:hover{
+	color:#CD0000;
+}
+.content{
+	margin: 5px auto;
+	width: 96%;
+	height: auto;
+	border-radius: 10px;
+	border:1px solid #8DB6CD;
+	padding: 25px 1% 20px 1%;
+	color:#104E8B;
+}
+.content #log_form table{
+	color:#104E8B;
+}
+.content #log_form table td{
+	width:120px;
+	height:40px;
+}
+.content #log_form table td input[type=text],input[type=password]{
+	width:100px;
+	outline-style: none;
+	border: 1px solid #C2C2C2;
+	border-radius: 4px;
+	transition: width 1s;
+	-webkit-transition: width 1s;
+}
+.content #log_form table td input[type=text]:focus,input[type=password]:focus{
+	width:120px;
+	outline-style: none;
+	border: 1px solid #CD0000;
+}
+.content #log_form button{
+	position: relative;
+	top:50px;
+	display: block;
+	width: 120px;
+	outline-style: none;
+	margin:0px auto;
+	color: #104E8B ;
+	background-color: #FFF;
+	border: 1px solid #104E8B;
+	padding:4px 15px 4px 15px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: width 1s;
+	-webkit-transition: width 1s;
+}
+.content #log_form button:hover{
+	width: 150px;
+	color:#CD0000;
+	border: 1px solid #CD0000;
+}
+
+
+.content #reg_form table{
+	color:#104E8B;
+}
+.content #reg_form table td{
+	width:120px;
+	height:40px;
+}
+.content #reg_form table td input[type=text],input[type=password]{
+	width:100px;
+	outline-style: none;
+	border: 1px solid #C2C2C2;
+	border-radius: 4px;
+	transition: width 1s;
+	-webkit-transition: width 1s;
+}
+.content #reg_form table td input[type=text]:focus,input[type=password]:focus{
+	width:120px;
+	outline-style: none;
+	border: 1px solid #CD0000;
+}
+.content #reg_form button{
+	position: relative;
+	top:50px;
+	display: block;
+	width: 120px;
+	outline-style: none;
+	margin:0px auto;
+	color: #104E8B ;
+	background-color: #FFF;
+	border: 1px solid #104E8B;
+	padding:4px 15px 4px 15px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: width 1s;
+	-webkit-transition: width 1s;
+}
+.content #reg_form button:hover{
+	width: 150px;
+	color:#CD0000;
+	border: 1px solid #CD0000;
+}
+
+.delete{
+	color:#CD0000;
+	cursor:pointer;
+}
+
+.delete:hover{
+	text-decoration: underline;
+}
+
+.content .article{
+	border-bottom: 1px solid #8DB6CD;
+}
+.content .article a{
+	color:#262626;
+	text-decoration: none;
+}
+
+.content .article a:hover{
+	color:#CD0000;
+}
+
+.content .article_foot{
+	position: relative;
+	margin:30px 2% -6px auto;
+}
+.content .article_foot a{
+	display: block;
+	cursor:pointer;
+	float:left;
+	margin:0px 15px 0px 15px;
+}
+.content .article_foot a:hover{
+	color:#CD0000;
+}
+
+.menu{
+	width: 96%;
+	height:30px;
+	margin:0px 1% 0px 1%;
+}
+
+.menu ul{
+	margin:0;
+}
+
+.menu ul li{
+	display: block;
+	margin:0px 20px 0px 0px;
+	list-style:none;
+	float:right;
+}
+
+.menu ul li span{
+	cursor:pointer;
+	color:#CD0000;
+}
+
+.menu ul li span:hover{
+	text-decoration: underline;
+}
+
+.menu ul li span a{
+	text-decoration: none;
+	color:#CD0000;
+}
+
+#new_room{
+	position: absolute;
+	display: none;
+	left:50%;
+	width: 420px;
+	height: 220px;
+	margin: 38px 0px 0px -225px;
+	padding: 25px 15px 25px 15px;
+	background-color: #FFF;
+	border:1px solid #8DB6CD;
+	border-radius: 10px;
+	z-index: +2;
+}
+
+.exit{
+	cursor: pointer;
+}
+
+.exit:hover{
+	color:#CD0000;
+}
+
+#mask_frame{
+	display: none;
+	position: absolute;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height: 100%;
+	margin:0px;
+	background-color: #000;
+	opacity: 0.6;
+	z-index: +1;
+}
+
+#new_room form table tr td{
+	width:70px;
+	height:60px;
+}
+
+#new_room form table tr td input[type=text]{
+	width:120px;
+	height:20px;
+	outline-style: none;
+	border:1px solid #404040;
+	border-radius: 5px;
+	transform: width 2s;
+	-webkit-transition: width 2s;
+}
+
+#new_room form table tr td input[type=text]:focus{
+	width:200px;
+	
+	border-color:#CD0000;
+}
+
+#new_room form button{
+	cursor:pointer;
+	display: block;
+	position: absolute;
+	left:50%;
+	top:250px;
+	margin:0px 0px 0px -60px;
+	border:1px solid #104E8B;
+	border-radius: 10px;
+	color:#104E8B;
+	width:120px;
+	height:30px;
+}
+
+#new_room form button:hover{
+	color:#CD0000;
+	border-color: #CD0000;
+}
+
+.article_content{
+	margin: 5px auto;
+	width: 94%;
+	border-radius: 15px;
+	border:1px solid #8DB6CD;
+	padding: 25px 2% 20px 2%;
+	color:#104E8B;
+}
+
+.article_content pre{
+	margin:10px auto;
+	border-bottom:1px solid #104E8B;
+	font:14px/28px "Microsoft YaHei";
+}
+
+.article_content .article_foot a{
+	display: block;
+	float:left;
+	margin:0px 12px 0px 0px;
+	cursor:pointer;
+}
+
+.article_content .article_foot a:hover{
+	color: #CD0000;
+}
+
+#article_send{
+	display: none;
+	position: absolute;
+	top:72px;
+	width: 480px;
+	left:50%;
+	margin:0px 0px 0px -240px;
+	padding: 10px 10px 10px 10px;
+	border-radius: 15px;
+	border:1px solid #8DB6CD;
+	background-color: #FFF;
+	z-index: +2;
+}
+
+#mask_article_send{
+	display: none;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height:100%;
+	background-color: #000;
+	opacity: 0.6;
+	z-index: +1;
+}
+
+#article_send form textarea{
+	resize:none;
+	height:100px;
+	width:470px;
+	color: #104E8B;
+	border-radius: 10px;
+	outline-style: none;
+}
+
+#article_send form textarea:focus{
+	border-color:#CD0000;
+	font-size:16px;
+}
+
+#article_send div button{
+	position: absolute;
+	top:18px;
+	right:20px;
+	width: 120px;
+	border:1px solid #104E8B;
+	font-size:16px;
+	border-radius: 10px;
+	color:#104E8B;
+	cursor: pointer;
+}
+#article_send div button:hover{
+	color:#CD0000;
+	border-color:#CD0000;
+}
+
+.error{
+	color:#CD0000;
+}
+
