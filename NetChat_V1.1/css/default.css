@@ -1,0 +1,133 @@
+body{
+	font:16px/32px "Microsoft Yahei";
+}
+.normal{
+	color:#36648B;
+}
+.normal_black{
+	color:#000;
+}
+.normal_white{
+	color:#FFF;
+}
+.error{
+	color:#CD0000;
+}
+.exit{
+	color:#FFF;
+	cursor: pointer;
+}
+.exit:hover{
+	color:#CD0000;
+}
+.center{
+	margin:0px auto;
+}
+.form_default {
+	overflow: hidden;
+	width: 450px;
+	border-radius: 10px;
+	padding: 30px 20px 30px 20px;
+	text-align: center;
+	background-color: #454545;
+
+}
+
+.form_default .header{
+	display: block;
+	font-size: 28px;
+	font-weight: 800;
+	margin:0px 0px 20px 0px;
+}
+
+.form_default table{
+	margin:0px auto;
+}
+
+.form_default table tr td{
+	width:180px;
+	height:30px;
+	font-size:16px;
+}
+
+.form_default table tr td input[type=text]{
+	border: 2px solid #787878;
+	border-radius: 10px;
+	padding:1px 5px 1px 7px;
+	width:160px;
+	height:25px;
+	outline-style: none;
+	font-size:14px;
+}
+
+.form_default table tr td input[type=text]:focus{
+	border-color:#CD0000;
+}
+
+.form_default table tr td input[type=password]{
+	border: 2px solid #787878;
+	border-radius: 10px;
+	padding:1px 5px 1px 7px;
+	width:160px;
+	height:25px;
+	outline-style: none;
+	font-size:14px;
+}
+
+.form_default table tr td input[type=password]:focus{
+	border-color:#CD0000;
+}
+
+.form_default button{
+	position: relative;
+	top:20px;
+}
+
+.button_default{
+	width: 120px;
+	height: 28px;
+	border-style:none;
+	border-radius: 8px;
+	outline-style: none;
+	background-color: #32CD32;
+	color:#FFF;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.button_default:hover{
+	opacity: 0.8;
+}
+
+.pop_up_default_background{
+	position: absolute;
+	left:50%;
+	top:50%;
+	height:300px;
+	width: 400px;
+	margin: -155px 0px 0px -220px;
+	border:2px solid #787878;
+	border-radius: 20px;
+	background-color: #454545;
+	opacity: 0.7;
+	z-index: +3;
+}
+
+.pop_up_default{
+	position: absolute;
+	left:50%;
+	top:50%;
+	height:300px;
+	width: 400px;
+	margin: -155px 0px 0px -220px;
+	padding: 10px 20px 10px 20px;
+	z-index: +4;
+}
+
+.mask{
+	position: absolute;
+	width: 100%;
+	height:	100%;
+	z-index: +2;
+}
